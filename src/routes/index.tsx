@@ -360,6 +360,60 @@ function Stat({ value, label }: { value: string; label: string }) {
   );
 }
 
+/* ---------------- EXPERIENCE ---------------- */
+function Experience() {
+  const roles = [
+    {
+      title: "GenAI Powered Data Analytics — Virtual Experience",
+      org: "Forage",
+      date: "June 2026",
+      bullets: [
+        "Conducted exploratory data analysis on customer financial datasets",
+        "Identified delinquency risk indicators for predictive systems",
+        "Built ML workflow concepts using XGBoost and SHAP explainability",
+        "Developed recommendation frameworks for business decision-making",
+      ],
+    },
+  ];
+  return (
+    <section id="experience" className="relative py-24 border-t border-border">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="max-w-2xl">
+          <SectionLabel>02 — Experience</SectionLabel>
+          <h2 className="mt-3 text-4xl md:text-5xl font-bold">Professional <span className="text-gradient">Experience</span></h2>
+        </div>
+        <div className="mt-12 grid gap-6">
+          {roles.map((r) => (
+            <div key={r.title} className="card-surface card-surface-hover p-6 md:p-8">
+              <div className="flex items-start gap-4">
+                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[var(--cyan-accent)]/20 to-[var(--emerald-accent)]/20 border border-border">
+                  <Briefcase className="h-5 w-5 text-[var(--cyan-accent)]" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h3 className="font-semibold text-lg">{r.title}</h3>
+                    <span className="text-xs font-mono text-[var(--cyan-accent)]">{r.date}</span>
+                  </div>
+                  <div className="text-sm text-muted-foreground">{r.org}</div>
+                  <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                    {r.bullets.map((b) => (
+                      <li key={b} className="flex gap-2">
+                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--emerald-accent)]" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 /* ---------------- SKILLS ---------------- */
 function Skills() {
   const groups = [
