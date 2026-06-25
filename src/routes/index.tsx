@@ -531,7 +531,7 @@ function Projects() {
     <section id="projects" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <SectionLabel>03 — Projects</SectionLabel>
+          <SectionLabel>04 — Projects</SectionLabel>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">Featured <span className="text-gradient">Work</span></h2>
           <p className="mt-4 text-muted-foreground">
             Selected projects across cloud, frontend, and applied AI — built with a bias toward
