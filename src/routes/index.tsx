@@ -529,20 +529,22 @@ function Projects() {
 /* ---------------- ACHIEVEMENTS ---------------- */
 function Achievements() {
   const certs = [
-    "Infosys Springboard — Generative AI & NLP",
-    "Infosys Springboard — Advanced JavaScript",
-    "Infosys Springboard — RPA",
-    "Django Web Development",
-    "AWS Cloud Practitioner (In Prep)",
+    "AWS Certified Data Engineer",
+    "AWS AI & ML Scholars — Challenge Completion",
+    "ECMAScript ES6 JavaScript",
+    "MySQL — Oracle Academy Certified",
+    "Dart Programming Training",
+    "Learning Django Web Development",
   ];
   const hacks = [
-    "HackerRank Orchestrate 2026 — Certificate of Excellence",
+    "GirlScript Summer of Code (GSSoC) 2026 — Contributor (Selected among 35,000+)",
     "Smart India Hackathon (SIH) 2025 — Participant",
-    "Qubit Quest — Competitive Participant",
+    "Qubit Quest — Participant",
     "FOSS Hack Delhi — Participant",
     "BFCET Hack 2.0 — Participant",
     "HackFinance — Participant",
   ];
+
   return (
     <section id="achievements" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
