@@ -59,11 +59,13 @@ function Nav() {
   const links = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "#achievements", label: "Achievements" },
     { href: "#contact", label: "Contact" },
   ];
+
   return (
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/60 border-b border-border">
       <div className="mx-auto max-w-7xl grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-4 sm:flex sm:justify-between">
