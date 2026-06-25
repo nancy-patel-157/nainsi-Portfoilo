@@ -649,7 +649,7 @@ function Footer() {
           © {new Date().getFullYear()} <span className="text-foreground">Nainsi</span> · Built with care.
         </div>
         <div className="flex items-center gap-4 text-muted-foreground">
-          <a href="https://github.com/nancy-patel-151" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Github className="h-4 w-4" /></a>
+          <a href="https://github.com/nancy-patel-157" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Github className="h-4 w-4" /></a>
           <a href="https://linkedin.com/in/nainsi-patel" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Linkedin className="h-4 w-4" /></a>
           <a href="mailto:nainsipatel26@gmail.com" className="hover:text-[var(--cyan-accent)]"><Mail className="h-4 w-4" /></a>
         </div>
