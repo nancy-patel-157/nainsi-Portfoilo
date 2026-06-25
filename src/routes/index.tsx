@@ -43,6 +43,7 @@ function Index() {
       <Nav />
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Achievements />
@@ -51,6 +52,7 @@ function Index() {
     </main>
   );
 }
+
 
 /* ---------------- NAV ---------------- */
 function Nav() {
