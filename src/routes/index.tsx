@@ -20,7 +20,10 @@ import {
   BadgeCheck,
   Download,
   Star,
+  Briefcase,
+  Phone,
 } from "lucide-react";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
