@@ -274,14 +274,15 @@ function Hero() {
 /* ---------------- ABOUT ---------------- */
 function About() {
   const education = [
-    { year: "2023 — Present", title: "B.Tech, Computer Science & Engineering", place: "KIET Group of Institutions" },
-    { year: "2023", title: "Senior Secondary (12th) — 85%", place: "JNV · PCM & IT" },
+    { year: "2024 — 2028", title: "B.Tech, Computer Science & Engineering", place: "KIET Group of Institutions" },
+    { year: "Schooling", title: "Jawahar Navodaya Vidyalaya (JNV)", place: "12th — 85% · PCM & IT" },
   ];
   const milestones = [
-    { year: "2026", title: "GSSoC '26 Contributor", place: "Open Source & AI Agents Tracks" },
-    { year: "2025", title: "Smart India Hackathon Participant", place: "National-level innovation event" },
-    { year: "2025", title: "AWS Cloud Practitioner — In Prep", place: "Cloud foundations & architecture" },
+    { year: "2026", title: "GSSoC '26 Contributor", place: "Selected among 35,000+ applicants" },
+    { year: "2026", title: "Forage — GenAI Data Analytics Virtual Experience", place: "XGBoost, SHAP, recommendation frameworks" },
+    { year: "2025", title: "Smart India Hackathon (SIH) 2025 — Participant", place: "National-level innovation event" },
   ];
+
   return (
     <section id="about" className="relative py-24">
       <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12">
