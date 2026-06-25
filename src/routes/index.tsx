@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import {
   ArrowRight,
   Github,
@@ -16,6 +17,8 @@ import {
   Trophy,
   Rocket,
   BadgeCheck,
+  Download,
+  Star,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
