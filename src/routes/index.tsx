@@ -20,7 +20,10 @@ import {
   BadgeCheck,
   Download,
   Star,
+  Briefcase,
+  Phone,
 } from "lucide-react";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,6 +43,7 @@ function Index() {
       <Nav />
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Projects />
       <Achievements />
@@ -49,16 +53,19 @@ function Index() {
   );
 }
 
+
 /* ---------------- NAV ---------------- */
 function Nav() {
   const links = [
     { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
+    { href: "#experience", label: "Experience" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
     { href: "#achievements", label: "Achievements" },
     { href: "#contact", label: "Contact" },
   ];
+
   return (
     <header className="sticky top-0 z-50 backdrop-blur-xl bg-background/60 border-b border-border">
       <div className="mx-auto max-w-7xl grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-6 py-4 sm:flex sm:justify-between">
@@ -269,14 +276,15 @@ function Hero() {
 /* ---------------- ABOUT ---------------- */
 function About() {
   const education = [
-    { year: "2023 — Present", title: "B.Tech, Computer Science & Engineering", place: "KIET Group of Institutions" },
-    { year: "2023", title: "Senior Secondary (12th) — 85%", place: "JNV · PCM & IT" },
+    { year: "2024 — 2028", title: "B.Tech, Computer Science & Engineering", place: "KIET Group of Institutions" },
+    { year: "Schooling", title: "Jawahar Navodaya Vidyalaya (JNV)", place: "12th — 85% · PCM & IT" },
   ];
   const milestones = [
-    { year: "2026", title: "GSSoC '26 Contributor", place: "Open Source & AI Agents Tracks" },
-    { year: "2025", title: "Smart India Hackathon Participant", place: "National-level innovation event" },
-    { year: "2025", title: "AWS Cloud Practitioner — In Prep", place: "Cloud foundations & architecture" },
+    { year: "2026", title: "GSSoC '26 Contributor", place: "Selected among 35,000+ applicants" },
+    { year: "2026", title: "Forage — GenAI Data Analytics Virtual Experience", place: "XGBoost, SHAP, recommendation frameworks" },
+    { year: "2025", title: "Smart India Hackathon (SIH) 2025 — Participant", place: "National-level innovation event" },
   ];
+
   return (
     <section id="about" className="relative py-24">
       <div className="mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-12">
@@ -352,35 +360,90 @@ function Stat({ value, label }: { value: string; label: string }) {
   );
 }
 
+/* ---------------- EXPERIENCE ---------------- */
+function Experience() {
+  const roles = [
+    {
+      title: "GenAI Powered Data Analytics — Virtual Experience",
+      org: "Forage",
+      date: "June 2026",
+      bullets: [
+        "Conducted exploratory data analysis on customer financial datasets",
+        "Identified delinquency risk indicators for predictive systems",
+        "Built ML workflow concepts using XGBoost and SHAP explainability",
+        "Developed recommendation frameworks for business decision-making",
+      ],
+    },
+  ];
+  return (
+    <section id="experience" className="relative py-24 border-t border-border">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="max-w-2xl">
+          <SectionLabel>02 — Experience</SectionLabel>
+          <h2 className="mt-3 text-4xl md:text-5xl font-bold">Professional <span className="text-gradient">Experience</span></h2>
+        </div>
+        <div className="mt-12 grid gap-6">
+          {roles.map((r) => (
+            <div key={r.title} className="card-surface card-surface-hover p-6 md:p-8">
+              <div className="flex items-start gap-4">
+                <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-[var(--cyan-accent)]/20 to-[var(--emerald-accent)]/20 border border-border">
+                  <Briefcase className="h-5 w-5 text-[var(--cyan-accent)]" />
+                </div>
+                <div className="min-w-0 flex-1">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                    <h3 className="font-semibold text-lg">{r.title}</h3>
+                    <span className="text-xs font-mono text-[var(--cyan-accent)]">{r.date}</span>
+                  </div>
+                  <div className="text-sm text-muted-foreground">{r.org}</div>
+                  <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                    {r.bullets.map((b) => (
+                      <li key={b} className="flex gap-2">
+                        <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-[var(--emerald-accent)]" />
+                        <span>{b}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+
 /* ---------------- SKILLS ---------------- */
 function Skills() {
   const groups = [
     {
       icon: Code2,
       title: "Languages",
-      items: ["Java", "Python", "C++", "SQL"],
-    },
-    {
-      icon: Smartphone,
-      title: "Web & Mobile",
-      items: ["Tailwind CSS", "JavaScript (ES6+)", "Django", "Flutter", "Dart", "HTML / CSS"],
-    },
-    {
-      icon: Cloud,
-      title: "Cloud & DevOps",
-      items: ["AWS S3", "CloudFront CDN", "Git", "GitHub Architecture"],
+      items: ["Python", "C++", "SQL", "JavaScript", "Dart", "HTML", "CSS"],
     },
     {
       icon: Cpu,
-      title: "AI & Automation",
-      items: ["AI Agents", "OpenAI GPT Integrations", "RPA"],
+      title: "Machine Learning",
+      items: ["Pandas", "NumPy", "Scikit-learn", "Model Evaluation", "Data Preprocessing", "Generative AI"],
+    },
+    {
+      icon: Cloud,
+      title: "Cloud & Databases",
+      items: ["AWS S3", "CloudFront", "AWS Services", "MySQL"],
+    },
+    {
+      icon: Smartphone,
+      title: "Tools & Core",
+      items: ["Git", "Linux", "VS Code", "Jupyter", "DSA", "OOP", "DBMS", "Flutter"],
     },
   ];
+
   return (
     <section id="skills" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <SectionLabel>02 — Skills</SectionLabel>
+          <SectionLabel>03 — Skills</SectionLabel>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">Core <span className="text-gradient">Skill Matrix</span></h2>
           <p className="mt-4 text-muted-foreground">
             A pragmatic toolkit across the full stack — from typed languages and frontend systems
@@ -414,53 +477,61 @@ function Skills() {
 function Projects() {
   const projects = [
     {
-      title: "AWS Global Hosting Deployment",
+      title: "AWS Static Hosting & CloudFront CDN",
       summary:
-        "Optimized static hosting on Amazon S3 with a CloudFront CDN layer — custom bucket policies, edge caching, and forced HTTP→HTTPS redirection to minimize global latency.",
+        "Globally optimized static hosting on Amazon S3 with CloudFront — edge caching, secure bucket policies, HTTPS redirection, and reduced global latency.",
       tags: ["AWS", "S3", "CloudFront", "CDN"],
       icon: Cloud,
     },
     {
-      title: "GSSoC '26 Frontend Contribution",
+      title: "Smart-Document-Insights",
       summary:
-        "Engineered a fully responsive 3-tier dark-themed Pricing Table component using Tailwind CSS for the Fork, Commit, Merge open-source ecosystem.",
-      tags: ["Open Source", "Tailwind", "React"],
+        "Python-based document analytics repository for workflow processing — automated parsing and structured insights from unstructured docs.",
+      tags: ["Python", "NLP", "Analytics"],
+      icon: Cpu,
+    },
+    {
+      title: "Customer Churn Prediction",
+      summary:
+        "End-to-end predictive ML pipeline with Flask integration for churn-risk analysis — feature engineering, model evaluation, and deployment.",
+      tags: ["ML", "Flask", "Scikit-learn"],
+      icon: Cpu,
+    },
+    {
+      title: "Student Score Predictor",
+      summary:
+        "Machine learning model evaluating and predicting academic performance with clean preprocessing and interpretability.",
+      tags: ["ML", "Pandas", "Regression"],
+      icon: Cpu,
+    },
+    {
+      title: "Multi-Domain Support Triage Agent",
+      summary:
+        "Terminal-based RAG automation system for intelligent log analysis and ticket triage across multiple support domains.",
+      tags: ["RAG", "LLM", "Automation"],
+      icon: Sparkles,
+    },
+    {
+      title: "Open Source Contribution — Pricing Table",
+      summary:
+        "Responsive dark-themed pricing table built with Tailwind CSS via the Fork, Commit, Merge workflow — PRs, reviews, and repo sync.",
+      tags: ["Open Source", "Tailwind", "Git"],
       icon: Rocket,
     },
     {
-      title: "Smart-Document-Insights",
+      title: "Cross-Platform Flutter Apps",
       summary:
-        "A specialized Python pipeline engineered for automated text parsing and intelligent document insights with structured outputs.",
-      tags: ["Python", "NLP", "Pipeline"],
-      icon: Cpu,
-    },
-    {
-      title: "Predictive ML Pipelines",
-      summary:
-        "Student Score Predictor and Customer Churn Prediction models built in Jupyter — feature engineering, evaluation, and clear interpretability.",
-      tags: ["ML", "Jupyter", "Scikit-Learn"],
-      icon: Cpu,
-    },
-    {
-      title: "Cross-Platform Mobile Utilities",
-      summary:
-        "Sleek mobile applications built with Flutter and Dart — clean layouts, smooth navigation, and reusable widgets.",
+        "Flutter applications including an Image Gallery App and a stateful profile-card system — reusable widgets and smooth navigation.",
       tags: ["Flutter", "Dart", "Mobile"],
       icon: Smartphone,
     },
-    {
-      title: "Open Source Footprint",
-      summary:
-        "Ongoing contributions to community-driven repos — issue triage, UI polish, and documentation improvements.",
-      tags: ["GitHub", "OSS", "Docs"],
-      icon: Github,
-    },
   ];
+
   return (
     <section id="projects" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <SectionLabel>03 — Projects</SectionLabel>
+          <SectionLabel>04 — Projects</SectionLabel>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">Featured <span className="text-gradient">Work</span></h2>
           <p className="mt-4 text-muted-foreground">
             Selected projects across cloud, frontend, and applied AI — built with a bias toward
@@ -476,7 +547,7 @@ function Projects() {
                   <p.icon className="h-5 w-5 text-[var(--cyan-accent)]" />
                 </div>
                 <a
-                  href="https://github.com/nancy-patel-151"
+                  href="https://github.com/nancy-patel-157"
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-[var(--cyan-accent)] transition-colors"
@@ -495,13 +566,14 @@ function Projects() {
                 ))}
               </div>
               <a
-                href="https://github.com/nancy-patel-151"
+                href="https://github.com/nancy-patel-157"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm text-[var(--cyan-accent)] hover:gap-2.5 transition-all"
               >
                 View source <ArrowRight className="h-3.5 w-3.5" />
               </a>
+
             </article>
           ))}
         </div>
@@ -513,25 +585,27 @@ function Projects() {
 /* ---------------- ACHIEVEMENTS ---------------- */
 function Achievements() {
   const certs = [
-    "Infosys Springboard — Generative AI & NLP",
-    "Infosys Springboard — Advanced JavaScript",
-    "Infosys Springboard — RPA",
-    "Django Web Development",
-    "AWS Cloud Practitioner (In Prep)",
+    "AWS Certified Data Engineer",
+    "AWS AI & ML Scholars — Challenge Completion",
+    "ECMAScript ES6 JavaScript",
+    "MySQL — Oracle Academy Certified",
+    "Dart Programming Training",
+    "Learning Django Web Development",
   ];
   const hacks = [
-    "HackerRank Orchestrate 2026 — Certificate of Excellence",
+    "GirlScript Summer of Code (GSSoC) 2026 — Contributor (Selected among 35,000+)",
     "Smart India Hackathon (SIH) 2025 — Participant",
-    "Qubit Quest — Competitive Participant",
+    "Qubit Quest — Participant",
     "FOSS Hack Delhi — Participant",
     "BFCET Hack 2.0 — Participant",
     "HackFinance — Participant",
   ];
+
   return (
     <section id="achievements" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <SectionLabel>04 — Achievements</SectionLabel>
+          <SectionLabel>05 — Achievements</SectionLabel>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">Credentials &amp; <span className="text-gradient">Hackathons</span></h2>
         </div>
 
@@ -574,19 +648,22 @@ function Contact() {
   return (
     <section id="contact" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-5xl px-6 text-center">
-        <SectionLabel center>05 — Contact</SectionLabel>
+        <SectionLabel center>06 — Contact</SectionLabel>
         <h2 className="mt-3 text-4xl md:text-5xl font-bold">Let's build <span className="text-gradient">something</span></h2>
         <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
           Open to internships, open-source collaborations, and AI/cloud projects.
           Drop a note — I usually reply within a day.
         </p>
 
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
           <ContactCard icon={<Mail className="h-4 w-4" />} label="Email" value="nainsipatel26@gmail.com" href="mailto:nainsipatel26@gmail.com" />
-          <ContactCard icon={<Github className="h-4 w-4" />} label="GitHub" value="nancy-patel-151" href="https://github.com/nancy-patel-151" />
+          <ContactCard icon={<Phone className="h-4 w-4" />} label="Phone" value="+91 8127988938" href="tel:+918127988938" />
+          <ContactCard icon={<Github className="h-4 w-4" />} label="GitHub" value="nancy-patel-157" href="https://github.com/nancy-patel-157" />
           <ContactCard icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="nainsi-patel" href="https://linkedin.com/in/nainsi-patel" />
+          <ContactCard icon={<Code2 className="h-4 w-4" />} label="Portfolio" value="nancy-patel-157.github.io/portfolio" href="https://nancy-patel-157.github.io/portfolio" />
           <ContactCard icon={<Code2 className="h-4 w-4" />} label="Codolio" value="profile/Nainsi" href="https://codolio.com/profile/Nainsi" />
         </div>
+
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <a href="mailto:nainsipatel26@gmail.com" className="btn-primary">
@@ -628,7 +705,7 @@ function Footer() {
           © {new Date().getFullYear()} <span className="text-foreground">Nainsi</span> · Built with care.
         </div>
         <div className="flex items-center gap-4 text-muted-foreground">
-          <a href="https://github.com/nancy-patel-151" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Github className="h-4 w-4" /></a>
+          <a href="https://github.com/nancy-patel-157" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Github className="h-4 w-4" /></a>
           <a href="https://linkedin.com/in/nainsi-patel" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Linkedin className="h-4 w-4" /></a>
           <a href="mailto:nainsipatel26@gmail.com" className="hover:text-[var(--cyan-accent)]"><Mail className="h-4 w-4" /></a>
         </div>
