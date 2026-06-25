@@ -605,7 +605,7 @@ function Achievements() {
     <section id="achievements" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <SectionLabel>04 — Achievements</SectionLabel>
+          <SectionLabel>05 — Achievements</SectionLabel>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">Credentials &amp; <span className="text-gradient">Hackathons</span></h2>
         </div>
 
