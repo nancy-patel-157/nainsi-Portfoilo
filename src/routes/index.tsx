@@ -648,7 +648,7 @@ function Contact() {
   return (
     <section id="contact" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-5xl px-6 text-center">
-        <SectionLabel center>05 — Contact</SectionLabel>
+        <SectionLabel center>06 — Contact</SectionLabel>
         <h2 className="mt-3 text-4xl md:text-5xl font-bold">Let's build <span className="text-gradient">something</span></h2>
         <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
           Open to internships, open-source collaborations, and AI/cloud projects.
