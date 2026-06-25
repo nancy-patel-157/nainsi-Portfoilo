@@ -491,7 +491,7 @@ function Projects() {
                   <p.icon className="h-5 w-5 text-[var(--cyan-accent)]" />
                 </div>
                 <a
-                  href="https://github.com/nancy-patel-151"
+                  href="https://github.com/nancy-patel-157"
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-[var(--cyan-accent)] transition-colors"
@@ -510,13 +510,14 @@ function Projects() {
                 ))}
               </div>
               <a
-                href="https://github.com/nancy-patel-151"
+                href="https://github.com/nancy-patel-157"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-6 inline-flex items-center gap-1.5 text-sm text-[var(--cyan-accent)] hover:gap-2.5 transition-all"
               >
                 View source <ArrowRight className="h-3.5 w-3.5" />
               </a>
+
             </article>
           ))}
         </div>
