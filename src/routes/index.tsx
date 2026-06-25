@@ -443,7 +443,7 @@ function Skills() {
     <section id="skills" className="relative py-24 border-t border-border">
       <div className="mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
-          <SectionLabel>02 — Skills</SectionLabel>
+          <SectionLabel>03 — Skills</SectionLabel>
           <h2 className="mt-3 text-4xl md:text-5xl font-bold">Core <span className="text-gradient">Skill Matrix</span></h2>
           <p className="mt-4 text-muted-foreground">
             A pragmatic toolkit across the full stack — from typed languages and frontend systems
