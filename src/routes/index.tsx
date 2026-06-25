@@ -268,8 +268,11 @@ function Hero() {
 
 /* ---------------- ABOUT ---------------- */
 function About() {
-  const timeline = [
+  const education = [
     { year: "2023 — Present", title: "B.Tech, Computer Science & Engineering", place: "KIET Group of Institutions" },
+    { year: "2023", title: "Senior Secondary (12th) — 85%", place: "JNV · PCM & IT" },
+  ];
+  const milestones = [
     { year: "2026", title: "GSSoC '26 Contributor", place: "Open Source & AI Agents Tracks" },
     { year: "2025", title: "Smart India Hackathon Participant", place: "National-level innovation event" },
     { year: "2025", title: "AWS Cloud Practitioner — In Prep", place: "Cloud foundations & architecture" },
@@ -300,20 +303,40 @@ function About() {
           </div>
         </div>
 
-        <div className="card-surface p-6 md:p-8">
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-            <GraduationCap className="h-4 w-4 text-[var(--cyan-accent)]" /> Education & Milestones
+        <div className="space-y-6">
+          {/* Education Card */}
+          <div className="card-surface p-6 md:p-8">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <School className="h-4 w-4 text-[var(--cyan-accent)]" /> Education
+            </div>
+            <ol className="mt-6 relative border-l border-border pl-6 space-y-6">
+              {education.map((t, i) => (
+                <li key={i} className="relative">
+                  <span className="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gradient-to-br from-[var(--cyan-accent)] to-[var(--emerald-accent)] ring-4 ring-background" />
+                  <div className="text-xs font-mono text-[var(--cyan-accent)]">{t.year}</div>
+                  <div className="mt-1 font-semibold">{t.title}</div>
+                  <div className="text-sm text-muted-foreground">{t.place}</div>
+                </li>
+              ))}
+            </ol>
           </div>
-          <ol className="mt-6 relative border-l border-border pl-6 space-y-6">
-            {timeline.map((t, i) => (
-              <li key={i} className="relative">
-                <span className="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gradient-to-br from-[var(--cyan-accent)] to-[var(--emerald-accent)] ring-4 ring-background" />
-                <div className="text-xs font-mono text-[var(--cyan-accent)]">{t.year}</div>
-                <div className="mt-1 font-semibold">{t.title}</div>
-                <div className="text-sm text-muted-foreground">{t.place}</div>
-              </li>
-            ))}
-          </ol>
+
+          {/* Milestones Card */}
+          <div className="card-surface p-6 md:p-8">
+            <div className="flex items-center gap-2 text-sm text-muted-foreground">
+              <Trophy className="h-4 w-4 text-[var(--emerald-accent)]" /> Milestones
+            </div>
+            <ol className="mt-6 relative border-l border-border pl-6 space-y-6">
+              {milestones.map((t, i) => (
+                <li key={i} className="relative">
+                  <span className="absolute -left-[31px] top-1 h-3 w-3 rounded-full bg-gradient-to-br from-[var(--cyan-accent)] to-[var(--emerald-accent)] ring-4 ring-background" />
+                  <div className="text-xs font-mono text-[var(--cyan-accent)]">{t.year}</div>
+                  <div className="mt-1 font-semibold">{t.title}</div>
+                  <div className="text-sm text-muted-foreground">{t.place}</div>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </div>
     </section>
