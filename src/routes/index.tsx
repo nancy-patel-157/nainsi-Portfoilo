@@ -281,7 +281,7 @@ function About() {
 
           <div className="mt-8 grid grid-cols-3 gap-4">
             <Stat value="15+" label="Projects" />
-            <Stat value="6+" label="Certifications" />
+            <Stat value="20+" label="Certifications" />
             <Stat value="4+" label="Hackathons" />
           </div>
         </div>
