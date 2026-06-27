@@ -220,15 +220,16 @@ function Hero() {
           {/* Avatar core */}
           <div className="absolute inset-[28%] rounded-full overflow-hidden border border-border bg-[var(--surface)] animate-float">
             <img
-              src="/nancy-port.jpg"
+              src="https://i.postimg.cc/1XYGKcxZ/nancy-port.jpg"
               alt="Nainsi"
+              loading="eager"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-[var(--cyan-accent)]/20 via-transparent to-[var(--emerald-accent)]/25" />
             <div className="absolute bottom-3 left-1/2 -translate-x-1/2 px-2 py-0.5 rounded-full bg-[var(--background)]/80 border border-border text-[10px] font-mono text-muted-foreground">
               nainsi.dev
             </div>
           </div>
+
 
           {/* Orbiting badges */}
           <div className="absolute inset-0 animate-spin-slow">
