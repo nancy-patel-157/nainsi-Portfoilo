@@ -349,6 +349,24 @@ function Experience() {
         "Developed recommendation frameworks for business decision-making",
       ],
     },
+    {
+      title: "Club Member",
+      org: "DSDL KIET",
+      date: "Oct 2024 – May 2026",
+      bullets: [
+        "Engaged in intensive data structures, algorithms, and core computing workshops to build strong problem-solving foundations.",
+        "Participated in collaborative peer code reviews and technical community challenges within the institution.",
+      ],
+    },
+    {
+      title: "Member",
+      org: "School of AI ML & DS",
+      date: "Nov 2024 – May 2026",
+      bullets: [
+        "Explored foundational machine learning workflows, data preprocessing techniques, and predictive modeling implementations.",
+        "Contributed to group discussions and practical sessions focused on artificial intelligence advancements.",
+      ],
+    },
   ];
   return (
     <section id="experience" className="relative py-24 border-t border-border">
