@@ -170,7 +170,12 @@ function Hero() {
             >
               <Linkedin className="h-4 w-4" /> Let's Connect
             </a>
-            <a href="mailto:nainsipatel26@gmail.com" className="btn-ghost">
+            <a
+              href="https://drive.google.com/file/d/1waP_X-7NHyiETuOgAnj3_xQ2hsr_v5P8/view?usp=drivesdk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-ghost"
+            >
               <Download className="h-4 w-4" /> Resume
             </a>
           </div>
