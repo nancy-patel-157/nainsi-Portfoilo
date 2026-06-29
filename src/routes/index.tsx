@@ -652,7 +652,7 @@ function Contact() {
           <ContactCard icon={<Mail className="h-4 w-4" />} label="Email" value="nainsipatel26@gmail.com" href="mailto:nainsipatel26@gmail.com" />
           <ContactCard icon={<Phone className="h-4 w-4" />} label="Phone" value="+91 8127988938" href="tel:+918127988938" />
           <ContactCard icon={<Github className="h-4 w-4" />} label="GitHub" value="nancy-patel-157" href="https://github.com/nancy-patel-157" />
-          <ContactCard icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="nainsi-patel" href="https://linkedin.com/in/nainsi-patel" />
+          <ContactCard icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="nainsi-patel" href="https://www.linkedin.com/in/nainsi-patel" />
           <ContactCard icon={<Code2 className="h-4 w-4" />} label="Portfolio" value="nancy-patel-157.github.io/portfolio" href="https://nancy-patel-157.github.io/portfolio" />
           <ContactCard icon={<Code2 className="h-4 w-4" />} label="Codolio" value="profile/Nainsi" href="https://codolio.com/profile/Nainsi" />
         </div>
