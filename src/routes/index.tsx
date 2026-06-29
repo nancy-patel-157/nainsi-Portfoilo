@@ -163,9 +163,9 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="https://linkedin.com/in/nainsi-patel"
+              href="https://www.linkedin.com/in/nainsi-patel"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="btn-ghost"
             >
               <Linkedin className="h-4 w-4" /> Let's Connect
@@ -652,7 +652,7 @@ function Contact() {
           <ContactCard icon={<Mail className="h-4 w-4" />} label="Email" value="nainsipatel26@gmail.com" href="mailto:nainsipatel26@gmail.com" />
           <ContactCard icon={<Phone className="h-4 w-4" />} label="Phone" value="+91 8127988938" href="tel:+918127988938" />
           <ContactCard icon={<Github className="h-4 w-4" />} label="GitHub" value="nancy-patel-157" href="https://github.com/nancy-patel-157" />
-          <ContactCard icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="nainsi-patel" href="https://linkedin.com/in/nainsi-patel" />
+          <ContactCard icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="nainsi-patel" href="https://www.linkedin.com/in/nainsi-patel" />
           <ContactCard icon={<Code2 className="h-4 w-4" />} label="Portfolio" value="nancy-patel-157.github.io/portfolio" href="https://nancy-patel-157.github.io/portfolio" />
           <ContactCard icon={<Code2 className="h-4 w-4" />} label="Codolio" value="profile/Nainsi" href="https://codolio.com/profile/Nainsi" />
         </div>
@@ -662,7 +662,7 @@ function Contact() {
           <a href="mailto:nainsipatel26@gmail.com" className="btn-primary">
             <Mail className="h-4 w-4" /> Email Me
           </a>
-          <a href="https://linkedin.com/in/nainsi-patel" target="_blank" rel="noreferrer" className="btn-ghost">
+          <a href="https://www.linkedin.com/in/nainsi-patel" target="_blank" rel="noopener noreferrer" className="btn-ghost">
             <Linkedin className="h-4 w-4" /> Connect on LinkedIn
           </a>
         </div>
@@ -677,7 +677,7 @@ function Contact() {
 
 function ContactCard({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href: string }) {
   return (
-    <a href={href} target="_blank" rel="noreferrer" className="card-surface card-surface-hover p-4 flex items-center gap-3">
+    <a href={href} target="_blank" rel="noopener noreferrer" className="card-surface card-surface-hover p-4 flex items-center gap-3">
       <div className="grid h-9 w-9 place-items-center rounded-lg bg-[var(--background)]/60 border border-border text-[var(--cyan-accent)]">
         {icon}
       </div>
@@ -699,7 +699,7 @@ function Footer() {
         </div>
         <div className="flex items-center gap-4 text-muted-foreground">
           <a href="https://github.com/nancy-patel-157" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Github className="h-4 w-4" /></a>
-          <a href="https://linkedin.com/in/nainsi-patel" target="_blank" rel="noreferrer" className="hover:text-[var(--cyan-accent)]"><Linkedin className="h-4 w-4" /></a>
+          <a href="https://www.linkedin.com/in/nainsi-patel" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--cyan-accent)]"><Linkedin className="h-4 w-4" /></a>
           <a href="mailto:nainsipatel26@gmail.com" className="hover:text-[var(--cyan-accent)]"><Mail className="h-4 w-4" /></a>
         </div>
       </div>
