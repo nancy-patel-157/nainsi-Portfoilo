@@ -163,9 +163,9 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </a>
             <a
-              href="https://linkedin.com/in/nainsi-patel"
+              href="https://www.linkedin.com/in/nainsi-patel"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="btn-ghost"
             >
               <Linkedin className="h-4 w-4" /> Let's Connect
