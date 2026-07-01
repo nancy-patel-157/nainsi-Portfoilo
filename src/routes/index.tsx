@@ -496,7 +496,7 @@ function Projects() {
         "End-to-end predictive ML pipeline with Flask integration for churn-risk analysis — feature engineering, model evaluation, and deployment.",
       tags: ["ML", "Flask", "Scikit-learn"],
       icon: Cpu,
-      sourceUrl: "https://github.com/nancy-patel-157",
+      sourceUrl: "https://github.com/nancy-patel-157/churn-project",
     },
     {
       title: "Student Score Predictor",
@@ -504,7 +504,7 @@ function Projects() {
         "Machine learning model evaluating and predicting academic performance with clean preprocessing and interpretability.",
       tags: ["ML", "Pandas", "Regression"],
       icon: Cpu,
-      sourceUrl: "https://github.com/nancy-patel-157",
+      sourceUrl: "https://github.com/nancy-patel-157/student-score-predictor",
     },
     {
       title: "Open Source Contribution — Pricing Table",
