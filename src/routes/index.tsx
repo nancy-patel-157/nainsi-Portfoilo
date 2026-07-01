@@ -480,13 +480,15 @@ function Projects() {
         "Globally optimized static hosting on Amazon S3 with CloudFront — edge caching, secure bucket policies, HTTPS redirection, and reduced global latency.",
       tags: ["AWS", "S3", "CloudFront", "CDN"],
       icon: Cloud,
+      sourceUrl: "https://github.com/nancy-patel-157",
     },
     {
       title: "Smart-Document-Insights",
       summary:
-        "Python-based document analytics repository for workflow processing — automated parsing and structured insights from unstructured docs.",
-      tags: ["Python", "NLP", "Analytics"],
+        "An intelligent document intelligence platform that automates text extraction, structural parsing, and advanced semantic analysis from unstructured multi-domain data. Features an embedded terminal-based RAG architecture for dynamic metadata querying, logical log analysis, and automated triage pipelines.",
+      tags: ["Python", "NLP", "RAG", "LLM", "LangChain", "Scikit-learn", "VectorDB"],
       icon: Cpu,
+      sourceUrl: "https://github.com/nancy-patel-157/Smart-Document-Insights",
     },
     {
       title: "Customer Churn Prediction",
@@ -494,6 +496,7 @@ function Projects() {
         "End-to-end predictive ML pipeline with Flask integration for churn-risk analysis — feature engineering, model evaluation, and deployment.",
       tags: ["ML", "Flask", "Scikit-learn"],
       icon: Cpu,
+      sourceUrl: "https://github.com/nancy-patel-157",
     },
     {
       title: "Student Score Predictor",
@@ -501,13 +504,7 @@ function Projects() {
         "Machine learning model evaluating and predicting academic performance with clean preprocessing and interpretability.",
       tags: ["ML", "Pandas", "Regression"],
       icon: Cpu,
-    },
-    {
-      title: "Multi-Domain Support Triage Agent",
-      summary:
-        "Terminal-based RAG automation system for intelligent log analysis and ticket triage across multiple support domains.",
-      tags: ["RAG", "LLM", "Automation"],
-      icon: Sparkles,
+      sourceUrl: "https://github.com/nancy-patel-157",
     },
     {
       title: "Open Source Contribution — Pricing Table",
@@ -515,6 +512,7 @@ function Projects() {
         "Responsive dark-themed pricing table built with Tailwind CSS via the Fork, Commit, Merge workflow — PRs, reviews, and repo sync.",
       tags: ["Open Source", "Tailwind", "Git"],
       icon: Rocket,
+      sourceUrl: "https://github.com/nancy-patel-157",
     },
     {
       title: "Cross-Platform Flutter Apps",
@@ -522,6 +520,7 @@ function Projects() {
         "Flutter applications including an Image Gallery App and a stateful profile-card system — reusable widgets and smooth navigation.",
       tags: ["Flutter", "Dart", "Mobile"],
       icon: Smartphone,
+      sourceUrl: "https://github.com/nancy-patel-157",
     },
   ];
 
