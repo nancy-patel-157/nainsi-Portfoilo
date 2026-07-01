@@ -544,7 +544,7 @@ function Projects() {
                   <p.icon className="h-5 w-5 text-[var(--cyan-accent)]" />
                 </div>
                 <a
-                  href="https://github.com/nancy-patel-157"
+                  href={p.sourceUrl || "https://github.com/nancy-patel-157"}
                   target="_blank"
                   rel="noreferrer"
                   className="text-muted-foreground hover:text-[var(--cyan-accent)] transition-colors"
