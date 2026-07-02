@@ -6,7 +6,8 @@ import { tanstackRouter } from "@tanstack/router-plugin/vite";
 import path from "node:path";
 
 export default defineConfig({
-  base: "/nainsi-Portfoilo/",
+  // Yahan humne base path badalkar aapki nayi repository ka naam (/portfolio/) rakh diya hai
+  base: "/portfolio/",
   plugins: [
     tanstackRouter({
       target: "react",
