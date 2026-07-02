@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Nainsi — Full-Stack Developer & Cloud / AI-ML Enthusiast" },
-      { name: "description", content: "Portfolio of Nainsi: B.Tech CSE @ KIET, full-stack web developer, GSSoC '26 contributor, cloud & AI-ML enthusiast." },
+      { name: "description", content: "Portfolio of Nainsi: B.Tech CS @ KIET, full-stack web developer, GSSoC '26 contributor, cloud & AI-ML enthusiast." },
       { property: "og:title", content: "Nainsi — Portfolio" },
       { property: "og:description", content: "Full-stack developer, GSSoC '26 contributor, cloud & AI-ML enthusiast." },
     ],
@@ -92,7 +92,7 @@ const ROLES = [
   "Full-Stack Web Developer",
   "Cloud & AI/ML Enthusiast",
   "Open Source Contributor",
-  "B.Tech CSE @ KIET",
+  "B.Tech CS @ KIET",
 ];
 
 function useRotatingRole(items: string[], interval = 2400) {
